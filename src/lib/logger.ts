@@ -26,4 +26,4 @@ const newLogger = (logLabel = ''): winston.Logger => {
 	});
 };
 
-export default newLogger('Twitter Api Server');
+export default newLogger('Ultimate-Queue Api Server');

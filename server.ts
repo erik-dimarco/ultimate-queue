@@ -14,7 +14,6 @@ const main = async () => {
 	app.use(express.json());
 	app.use(express.urlencoded({ extended: false }));
 
-	// The GraphQL endpoint
 	app.listen(port, () => {
 		log.info(`🚀 The server has started on port ${port}`);
 	});

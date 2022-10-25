@@ -9,4 +9,4 @@ ADD . /app
 RUN yarn install
 
 # Start 'er up
-CMD ["yarn", "start"]
+CMD ["yarn", "start:", "dev"]

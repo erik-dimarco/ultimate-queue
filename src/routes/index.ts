@@ -1,3 +1,3 @@
-import queue from './addToQueue';
+import job from './job';
 
-export default [queue];
+export default [job];

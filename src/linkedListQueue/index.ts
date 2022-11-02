@@ -79,6 +79,40 @@ export class Queue<T> implements IQueue<T> {
 	}
 }
 
-const run = () => {};
+// const run = () => {
+// 	interface Post {
+// 		title: string;
+// 	}
 
-run();
+// 	const queue = new Queue<Post>('queue', QueueType.QUEUE);
+
+// 	const queueResults = queue.traverse(); // [];
+// 	console.log('queueResults', queueResults);
+
+// 	queue.add({ title: 'Post A' });
+// 	queue.add({ title: 'Post B' });
+// 	queue.add({ title: 'Post C' });
+// 	queue.add({ title: 'Post D' });
+
+// 	queue.remove();
+
+// 	console.log('fullQueue', queue.traverse()); // [ { title: 'Post B' }, { title: 'Post C' }, { title: 'Post D' } ]
+// 	queue.search(({ title }) => title === 'Post A'); // Node { data: { title: "Post A" }, prev: Node, next: Node};
+
+// 	const stack = new Queue<Post>('stack', QueueType.STACK);
+
+// 	const stackResults = queue.traverse(); // [];
+// 	console.log('stackResults', stackResults);
+
+// 	stack.add({ title: 'Post A' });
+// 	stack.add({ title: 'Post B' });
+// 	stack.add({ title: 'Post C' });
+// 	stack.add({ title: 'Post D' });
+
+// 	stack.remove();
+
+// 	console.log('fullStack', stack.traverse()); // [ { title: 'Post C' }, { title: 'Post B' }, { title: 'Post A' } ]
+// 	console.log(stack.search(({ title }) => title === 'Post A')); // Node { data: { title: "Post A" }, prev: Node, next: null};
+// };
+
+// run();

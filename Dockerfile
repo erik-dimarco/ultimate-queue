@@ -10,3 +10,4 @@ RUN yarn install
 
 # Start 'er up
 CMD ["yarn", "start:", "dev"]
+# CMD ["yarn", "start"]

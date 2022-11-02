@@ -1,3 +1,4 @@
 import restfulErrorHandler from './restfulErrorHandler';
+import validate from './validate';
 
-export { restfulErrorHandler };
+export { restfulErrorHandler, validate };

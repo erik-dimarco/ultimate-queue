@@ -1,12 +1,15 @@
 import { Node } from 'node';
 
-interface IQueue<T> {
-	insertAtHead(data: T): Node<T>;
-	insertAtTail(data: T): Node<T>;
-	deleteNode(node: Node<T>): void;
+export interface IQueue<T> {
+	// insertAtHead(data: T): Node<T>;
+	add(data: T): Node<T>;
+	remove(): void;
 	traverse(): T[];
 	size(): number;
 	search(comparator: (data: T) => boolean): Node<T> | null;
 }
 
-export default IQueue;
+export enum QueueType {
+	STACK = 'stack',
+	QUEUE = 'queue'
+}
